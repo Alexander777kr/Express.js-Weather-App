@@ -12,6 +12,8 @@ const partialsPath = path.join(__dirname, "../templates/partials");
 const geocode = require("./utils/geocode");
 const forecast = require("./utils/forecast");
 
+const port = process.env.PORT || 3000;
+
 //Setup handlebars engine and views location
 app.set("view engine", "hbs");
 app.set("views", viewsPath);
@@ -106,6 +108,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server is up on port 3000");
+app.listen(port, () => {
+  console.log("Server is up on port " + port);
 });
