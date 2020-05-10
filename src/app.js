@@ -29,14 +29,14 @@ app.use(
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather",
-    name: "Andrew Mead",
+    name: "Aleksandr Kabanskiy",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About me",
-    name: "Andrew Mead",
+    name: "Aleksandr Kabanskiy",
   });
 });
 
@@ -44,7 +44,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     helloMessage: "This is hbs hello page",
     title: "Help",
-    name: "Andrew Mead",
+    name: "Aleksandr Kabanskiy",
   });
 });
 
@@ -95,7 +95,7 @@ app.get("/products", (req, res) => {
 app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "404",
-    name: "Andrew Mead",
+    name: "Aleksandr Kabanskiy",
     errorMessage: "Help article not found",
   });
 });
@@ -103,7 +103,7 @@ app.get("/help/*", (req, res) => {
 app.get("*", (req, res) => {
   res.render("404", {
     title: "404",
-    name: "Andrew Mead",
+    name: "Aleksandr Kabanskiy",
     errorMessage: "Page not found",
   });
 });
